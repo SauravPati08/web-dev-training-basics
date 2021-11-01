@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register on our Website</title>
+</head>
+<body>
+	<h1>Register Here</h1>
+	<!-- 
+		1. Name
+		2. Email
+		3. Password
+		4. Bio / Address
+		5. Branch
+		6. Gender
+		7. College
+		8. Profile Picture
+		9. DOB
+		10. Hobby
+	 -->
+
+	 <!-- 
+	 	attributes:
+	 	1. action - php file
+	 	2. method - POST/GET
+	 	3. required
+	 	4. placeholder
+	 	5. name
+	 	6. value
+
+	  -->
+	 <form action="one.php" method="POST">
+	 	<fieldset>
+	 		<legend>Group #2</legend>
+	 		<label>Name</label><br>
+		    <input type="text" value="Saurav" name="user_name" required=""><br>
+
+		    <label>Email</label><br>
+		    <input type="email" name="" placeholder="Email : abc@gmail.com"><br>
+
+		    <label>Password</label><br>
+		    <input type="password" name=""><br>
+	 	</fieldset>
+	 	
+
+	    <label>Age</label><br>
+	    <input type="number" name=""><br>
+
+	    <label>DOB</label><br>
+	    <input type="date" name=""><br>
+
+	    <label>Time</label><br>
+	    <input type="time" name=""><br>
+
+	    <label>Profile Picture</label><br>
+	    <input type="file" name=""><br>
+
+	    <label>Bio</label><br>
+	    <textarea rows="10" cols="50"></textarea><br>
+
+	    <label>Gender</label><br>
+	    <input type="radio" name="x">Male<br>
+	    <input type="radio" name="x">Female<br>
+
+	    <label>Hobby</label><br>
+	    <input type="checkbox" name="">Gaming<br>
+	    <input type="checkbox" name="">Sports<br>
+	    <input type="checkbox" name="">Music<br>
+
+	    <label>Branch</label><br>
+	    <select>
+	    	<option>Select</option>
+	    	<option>CSE</option>
+	    	<option>ECE</option>
+	    	<option>IT</option>
+	    	<option>ME</option>
+	    	<option>EE</option>
+	    	<option>CE</option>
+	    </select><br>
+
+	    <fieldset>
+	    	<legend>Group #1</legend>
+	    	<label>Linkedin Profile</label><br>
+	        <input type="url" name=""><br>
+
+	        <label>Price Range(100 to 100000)</label><br>
+	        <input type="range" name="" min="100" max="100000"><br>
+	    </fieldset>
+
+	    <label>Colour</label><br>
+	    <input type="color" name=""><br>
+
+	    <input type="submit" name="" value="Register Here"><br>
+	    <input type="reset" name="">
+
+	 </form>
+</body>
+</html>

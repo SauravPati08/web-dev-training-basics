@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Button Counter</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+	
+	body{
+
+		background: #b92b27;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	}
+	div{
+		max-width: 300px;
+		margin: auto;
+		margin-top: 200px;
+	}
+	p{
+		text-align: center;
+		color: white;
+		font-size: 200px;
+
+	}
+
+	button{
+		background-color: yellowgreen;
+		color: black;
+		border: none;
+		width: 140px;
+		height: 30px;
+		cursor: pointer;
+
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var number;
+
+		// detect the button clicks
+		// text() takes input as a string
+		// $('#add').click(function(){
+		// 	number = Number($('#number').text());
+		// 	number = number + 1;
+		// 	$('#number').text(number);
+		// })
+
+		// $('#sub').click(function(){
+		// 	number = Number($('#number').text());
+		// 	number = number - 1;
+		// 	$('#number').text(number);
+		// })
+
+
+		$('.btn').click(function(){
+			number = Number($('#number').text());
+
+			if($(this).text() === 'Add'){
+				number = number + 1;
+			}else{
+				number = number - 1;
+			}
+			
+			$('#number').text(number);
+		})
+
+
+	})
+
+</script>
+
+<body>
+
+	<div>
+		<p id="number">0</p>
+		<button class="btn">Add</button>
+		<button class="btn">Sub</button>
+	</div>
+
+</body>
+</html>
+

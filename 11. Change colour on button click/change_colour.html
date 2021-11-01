@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Demo</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Detect the click of the button 
+		$('#btn').click(function(){
+			// alert('Button Clicked');
+			
+			// Fetch the selected color
+			var selected_color = $('#color').val();
+			// alert(selected_color);
+
+			// Change the colour inside the div
+			$('#bg').css('background-color',selected_color);
+		})
+	})
+</script>
+
+<style type="text/css">
+	div{
+		width: 300px;
+		height: 300px;
+		background-color: red;
+		margin-bottom: 30px;
+	}
+</style>
+
+<body>
+
+	<div id="bg">
+		
+	</div>
+
+	<label>Select Colour</label><br><br>
+	<input type="color" name="" id="color"><br><br>
+	<button id="btn">Change Color</button>
+
+</body>
+</html>

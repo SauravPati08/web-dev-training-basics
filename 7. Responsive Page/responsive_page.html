@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Media Queries Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.navbar{
+		background-color: red;
+		height: 50px;
+		color: white;
+	}
+	.navbar h2{
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.container{
+		max-width: 1400px;
+		margin: auto;
+	}
+	.box{
+		float: left;
+		width: 20%;
+		height: 200px;
+		border: 5px black solid;
+		margin: 20px;
+		background-color: brown;
+	}
+
+	/*Laptop/Desktop - 1024
+	  Tablet - >720 and <1024
+	  Smartphones -  <720
+	*/
+
+	@media(max-width: 720px){
+		.box{
+			width: 96%;
+			margin: 5px;
+			background-color: blue;
+		}
+	}
+	@media(max-width: 1023px) and (min-width: 721px){
+		.box{
+			width: 47%;
+			background-color: yellow;
+			margin: 5px;
+		}
+	}
+</style>
+<body>
+
+	<div class="navbar">
+		<h2>Responsive Web Demo</h2>
+	</div>
+	<div class="container">
+		<div class="box">
+			Box1
+		</div>
+		<div class="box">
+			Box2
+		</div>
+		<div class="box">
+			Box3
+		</div>
+		<div class="box">
+			Box4
+		</div>
+	</div>
+
+</body>
+</html>
